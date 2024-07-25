@@ -18,7 +18,6 @@ function ocultarImagen() {
     titulo.style.display = 'none';
     parrafo.style.display = 'none';
 }
-
 function encriptar() {
     console.log('Encriptar función llamada');
     var texto = document.getElementById('palabraParaEncriptar').value;

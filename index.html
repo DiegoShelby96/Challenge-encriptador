@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Proyecto Encriptando</title>
+</head>
+<body>
+    <header>
+        <div class="logo-encriptador">
+            <img src="./assets/Logo.png" alt="Aquí debería haber un logo">
+        </div>
+    </header>
+    <main class="contenido">
+        <section class="izquierda-site">
+            <textarea id="palabraParaEncriptar" placeholder="Escribe aquí tu mensaje"></textarea>
+            <p>⚠️Solo colocar letras en minúsculas y sin acentuar</p>
+            <div class="botones">
+                <button onclick="encriptar();">Encriptar</button>
+                <button onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="derecha-site">
+            <div>
+                <h2 id="tituloImagen">Encripta o Desencripta</h2>
+            </div>
+            <div class="imagenDeResultado">
+            <img id="imagenVacia" src="./assets/esta-vacio.jpg" alt="Escribe algo y desaparece">
+            </div>
+            <div class="parrafoDeImagen">
+                <p id="parrafoImagen">Ingresa el texto que deseas encriptar y desencriptar</p>
+            </div>
+            <label for="resultadoEncriptado" class="oculto"><strong>Resultado</strong></label>
+            <textarea id="resultadoEncriptado" class="oculto" readonly></textarea>
+            <div class="botones">
+                <button class="oculto" onclick="copiar();">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por Diego Gutiérrez el 07-2024</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
 

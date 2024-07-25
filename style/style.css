@@ -1,0 +1,243 @@
+:root {
+    --color-primario: #77e4c8;
+    --color-secundario: #36C2CE;
+    --color-fondo: #f0f8ff;
+    --color-texto: #333;
+    --color-boton: #007bff;
+    --color-boton-texto: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-secundario);
+    color: var(--color-boton-texto);
+}
+
+.logo-encriptador img {
+    height: 75px;
+    width: auto;
+}
+
+.contenido {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.izquierda-site {
+    flex: 3;
+    padding: 20px;
+    min-width: 250px;
+    height: 93%;
+    box-sizing: border-box;
+}
+
+.derecha-site {
+    flex: 1;
+    padding: 30px;
+    min-width: 250px;
+    height: 93%;
+    margin-left: auto;
+    box-shadow: 0 0 50px 0;
+    border: 5px solid var(--color-secundario);
+    border-radius: 16px;
+    background: var(--color-primario);
+    box-sizing: border-box;
+}
+.oculto {
+    display: none;
+}
+.imagenDeResultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenDeResultado img{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.parrafoDeImagen {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 350px; 
+    padding: 10px; 
+    border: 1px solid var(--color-primario);
+    border-radius: 16px;
+    font-size: 1.5rem;
+    background: transparent; 
+    color: var(--color-texto);
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+}
+#resultadoEncriptado {
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+button {
+    padding: 20px 72px;
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 2.75rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#tituloImagen{
+    font-size: 2.25rem;
+}
+p {
+    font-size: 1.25rem;
+    color: var(--color-texto);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--color-secundario);
+    color: var(--color-boton-texto);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1500px) {
+    .contenido {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+        margin-block-end: 10%;
+    }
+
+    .izquierda-site {
+        flex: 3; 
+        padding: 20px;
+        min-width: 100%;
+    }
+
+    .derecha-site {
+        flex: 1; 
+        padding: 20px;
+        min-width: 100%;
+        box-shadow: 0 0 50px 0; 
+        border: solid 5px var(--color-secundario); 
+    }
+
+    
+    .imagenDeResultado {
+        display: none;
+    }
+
+    #resultadoEncriptado {
+        height: 40%; 
+    }
+
+    .botones {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    button {
+        width: 85%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .parrafoDeImagen, #tituloImagen {
+    text-align: center;
+    padding-top: 5%;
+    }
+    footer{
+    display: none;
+    }
+}
+@media (max-width: 570px){
+    .contenido {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+        margin-block-end: 10%;
+    }
+
+    .izquierda-site {
+        flex: 3; 
+        padding: 20px;
+        min-width: 100%;
+    }
+
+    .derecha-site {
+        flex: 1; 
+        padding: 20px;
+        min-width: 100%;
+        box-shadow: 0 0 50px 0; 
+        border: solid 5px var(--color-secundario); 
+    }
+
+    
+    .imagenDeResultado {
+        display: none;
+    }
+
+    #resultadoEncriptado {
+        height: 40%; 
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 85%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .parrafoDeImagen, #tituloImagen {
+    text-align: center;
+    padding-top: 5%;
+    }
+    footer{
+    display: none;
+    }
+}
